@@ -58,13 +58,37 @@
 			children = (
 				A224B4D325307CC700AFF5F6 /* AppDelegate.swift */,
 				A224B4D525307CC700AFF5F6 /* SceneDelegate.swift */,
-				A224B4D725307CC700AFF5F6 /* ViewController.swift */,
-				A224B4D925307CC700AFF5F6 /* Main.storyboard */,
+				A224B4E925307CEC00AFF5F6 /* Model */,
+				A224B4E825307CE100AFF5F6 /* Controller */,
+				A224B4E725307CD500AFF5F6 /* View */,
 				A224B4DC25307CCD00AFF5F6 /* Assets.xcassets */,
 				A224B4DE25307CCD00AFF5F6 /* LaunchScreen.storyboard */,
 				A224B4E125307CCD00AFF5F6 /* Info.plist */,
 			);
 			path = "Recipe App";
+			sourceTree = "<group>";
+		};
+		A224B4E725307CD500AFF5F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A224B4D925307CC700AFF5F6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A224B4E825307CE100AFF5F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A224B4D725307CC700AFF5F6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A224B4E925307CEC00AFF5F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
