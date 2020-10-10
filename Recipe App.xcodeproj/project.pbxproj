@@ -13,6 +13,8 @@
 		A224B4DB25307CC700AFF5F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A224B4D925307CC700AFF5F6 /* Main.storyboard */; };
 		A224B4DD25307CCD00AFF5F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A224B4DC25307CCD00AFF5F6 /* Assets.xcassets */; };
 		A224B4E025307CCD00AFF5F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A224B4DE25307CCD00AFF5F6 /* LaunchScreen.storyboard */; };
+		A22FC28325317C0200519C22 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FC28225317C0200519C22 /* Dish.swift */; };
+		A22FC2892531968500519C22 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FC2882531968500519C22 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A224B4DC25307CCD00AFF5F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A224B4DF25307CCD00AFF5F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A224B4E125307CCD00AFF5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A22FC28225317C0200519C22 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		A22FC2882531968500519C22 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				A224B4DC25307CCD00AFF5F6 /* Assets.xcassets */,
 				A224B4DE25307CCD00AFF5F6 /* LaunchScreen.storyboard */,
 				A224B4E125307CCD00AFF5F6 /* Info.plist */,
+				A22FC2882531968500519C22 /* MyTableViewCell.swift */,
 			);
 			path = "Recipe App";
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		A224B4E925307CEC00AFF5F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A22FC28225317C0200519C22 /* Dish.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A224B4D825307CC700AFF5F6 /* ViewController.swift in Sources */,
+				A22FC28325317C0200519C22 /* Dish.swift in Sources */,
 				A224B4D425307CC700AFF5F6 /* AppDelegate.swift in Sources */,
+				A22FC2892531968500519C22 /* MyTableViewCell.swift in Sources */,
 				A224B4D625307CC700AFF5F6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
