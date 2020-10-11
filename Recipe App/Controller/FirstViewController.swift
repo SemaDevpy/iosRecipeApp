@@ -20,6 +20,8 @@ class FirstViewController: UIViewController{
         tableView.dataSource = self
     }
 
+    
+    
 
 }
 
@@ -42,9 +44,14 @@ extension FirstViewController: UITableViewDataSource{
 
 extension FirstViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let food = dishInfo.array[indexPath.row].titleOfDish
-        print(food)
-        
-        
+        performSegue(withIdentifier: "goToFood", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! SecondViewController
+        if let indexPath = tableView.indexPathForSelectedRow{
+            destinationVC.foodName = dishInfo.array[indexPath.row].titleOfDish
+            destinationVC.foodImage = dishInfo.array[indexPath.row].image
+        }
     }
 }
