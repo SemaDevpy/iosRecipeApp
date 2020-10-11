@@ -131,7 +131,22 @@
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2Y-hC-Mq1">
                                         <rect key="frame" x="0.0" y="538.5" width="414" height="269.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fye-mF-ppt">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="269.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Fye-mF-ppt" firstAttribute="top" secondItem="K2Y-hC-Mq1" secondAttribute="top" id="6Sz-pV-vbc"/>
+                                            <constraint firstItem="Fye-mF-ppt" firstAttribute="leading" secondItem="K2Y-hC-Mq1" secondAttribute="leading" id="9KL-bf-oiT"/>
+                                            <constraint firstAttribute="bottom" secondItem="Fye-mF-ppt" secondAttribute="bottom" id="lmp-jI-ZiP"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fye-mF-ppt" secondAttribute="trailing" id="vJg-MK-cdZ"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -148,6 +163,7 @@
                     <navigationItem key="navigationItem" id="iHO-1v-iTN"/>
                     <connections>
                         <outlet property="imageFood" destination="yyl-XB-MO4" id="oS9-lc-lpS"/>
+                        <outlet property="instructions" destination="Fye-mF-ppt" id="rdF-ZR-nbi"/>
                         <outlet property="tableView" destination="cm7-fU-fOd" id="aeZ-4w-nMc"/>
                     </connections>
                 </viewController>
