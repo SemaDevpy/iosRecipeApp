@@ -11,4 +11,7 @@ import Foundation
 
 struct DishModel {
     let instruction : String
+    
+    let ingredientsAndMeasure : [String : String]
+
 }

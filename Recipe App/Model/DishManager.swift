@@ -32,7 +32,7 @@ struct DishManager {
             //3.give the session a task
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil{
-                    print(error!)
+                    self.delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data{
@@ -51,9 +51,12 @@ struct DishManager {
     func parseJSON(_ dishData : Data) -> DishModel?{
         let decoder = JSONDecoder()
         do{
-            let decodedData = try decoder.decode(DishData.self, from: dishData)
+            var decodedData = try decoder.decode(DishData.self, from: dishData)
             let instruction = decodedData.meals[0].strInstructions
-            let dish = DishModel(instruction: instruction)
+            let dict = decodedData.meals[0].returnIngredientsAndMeasure()
+            
+            let dish = DishModel(instruction: instruction, ingredientsAndMeasure: dict)
+            
             return dish
         }
         catch{

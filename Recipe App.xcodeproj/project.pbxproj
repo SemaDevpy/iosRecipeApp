@@ -105,9 +105,9 @@
 			children = (
 				A22FC28225317C0200519C22 /* Dish.swift */,
 				A22FC28A2531B6D200519C22 /* DishInfo.swift */,
+				A26009A12533063D00E2E91E /* DishModel.swift */,
 				A260099D2532FC8000E2E91E /* DishManager.swift */,
 				A260099F2533018400E2E91E /* DishData.swift */,
-				A26009A12533063D00E2E91E /* DishModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
