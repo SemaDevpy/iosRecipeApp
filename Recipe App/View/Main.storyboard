@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0bE-Ix-zXe">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="158" width="414" height="704"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="6hc-vg-UZU" customClass="MyTableViewCell" customModule="Recipe_App" customModuleProvider="target">
@@ -74,25 +74,35 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search a food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PCd-uF-4Nr">
+                                <rect key="frame" x="0.0" y="88" width="414" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="0bE-Ix-zXe" firstAttribute="top" secondItem="PCd-uF-4Nr" secondAttribute="bottom" id="3Ns-8X-MBW"/>
+                            <constraint firstItem="PCd-uF-4Nr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G5v-RM-YSG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PCd-uF-4Nr" secondAttribute="trailing" id="Hvt-Ik-m4A"/>
                             <constraint firstItem="0bE-Ix-zXe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MaX-oY-mTP"/>
                             <constraint firstItem="0bE-Ix-zXe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PvM-Ze-ZN5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0bE-Ix-zXe" secondAttribute="bottom" id="bho-KZ-MSf"/>
-                            <constraint firstItem="0bE-Ix-zXe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="rtg-9g-ath"/>
+                            <constraint firstItem="0bE-Ix-zXe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="70" id="rtg-9g-ath"/>
+                            <constraint firstItem="PCd-uF-4Nr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wbr-bv-WCl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recipes" id="YzB-rf-hIg"/>
                     <connections>
+                        <outlet property="field" destination="PCd-uF-4Nr" id="SCA-Ok-OG2"/>
                         <outlet property="tableView" destination="0bE-Ix-zXe" id="o3U-BB-TiX"/>
                         <segue destination="eUn-D7-Osn" kind="show" identifier="goToFood" id="PK6-fq-42i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9034.782608695652" y="112.5"/>
+            <point key="canvasLocation" x="9033.3333333333339" y="112.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Mvu-3C-jg1">
